@@ -25,9 +25,9 @@ function Poke() {
       .get(`https://pokeapi.co/api/v2/pokemon/${search}`)
       .then((res) => {
         const result = res.data.results;
+        console.log(res);
 
-        SetPoke({ cards: result, search: "" });
-        console.log(result);
+        SetPoke({ cards: result || [], search: "" });
       });
   }
   return (
