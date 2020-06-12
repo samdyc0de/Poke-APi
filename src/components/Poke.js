@@ -35,7 +35,7 @@ function Poke() {
       {loading ? (
         <div className="container">
           <h1 className="text-dark text-dark d-flex justify-content-center ">
-            Loading...
+            loading...
           </h1>
         </div>
       ) : (
